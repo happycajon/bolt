@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/* 共通スタイル */
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+.text {
+  color:#fff;
+}
+
+/* ここからヘッダー */
+.header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header-inner {
+  padding: 15px 0;
+}
+.button__contact {
+  font-size: 12px;
+  background-color: #74cfae;
+  padding:14px 12px;
+  float: right;
+  transition: all .3s;
+}
+.button__contact:hover {
+  color: #333;
+}
+
+/* ここからテーマ */
+.title {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.title-inner {
+  padding: 250px 0;
+  text-align: center;
+}
+.text__bolt__theme {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+.text__bolt__sub {
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
+/* ここからiPhone */
+.iphone {
+  background-color: #74cfae;
+  width: 100%;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.green-inner {
+  padding-top: 50px;
+}
+.box__iphone {
+  float: left;
+  width: 30%;
+  margin-left: 100px; 
+}
+.box__text__green {
+  float: left;
+  width: 50%;
+  margin-top:20px;
+  text-align: center;
+}
+.green__theme {
+  font-size: 24px;
+}
+.green__sub {
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+/* ここからロボット */
+.siximg {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.grey-inner {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.d-text{
+  color: #333;
+  font-size: 24px;;
+}
+.six__img {
+  margin-top: 40px;
+}
+.img {
+  display: block;
+  float: left;
+}
+.robots {
+  margin-left: 100px;
+  opacity: 0.7;
+  transition: all .3s;
+}
+.robots:hover {
+  opacity: 1;
+}
+
+.img:nth-child(3n+1) {
+  margin-left: 0;
+}
+.img:nth-child(n+4):nth-child(even) {
+  margin-top: 80px;
+}
+.img:nth-child(n+4):nth-child(odd) {
+  margin-top: 80px;
+}
+
+/* ここからロボット下のセクション */
+.box__text__grey {
+  margin-top: 90px;
+  margin-left: 250px;
+}
+.box__left {
+  float: left;
+  width: 50%;
+}
+.box__right {
+  float: left;
+  padding:14px 20px;
+  margin-left: 90px;
+}
+.grey__sub {
+  font-size: 12px;
+}
+.button__mail {
+  font-size: 12px;
+  background-color: #74cfae;
+  padding:14px 20px;
+  transition: all .3s;
+}
+.button__mail:hover {
+  color: #333;
+}
+
+/* ここからダークグレー */
+.fourimg {
+  background-color: #4e4e4e;
+  width: 100%;
+}
+.dark__grey-inner {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.dark__grey__theme {
+  font-size: 24px;
+}
+.four__img {
+  margin-top: 70px;
+  margin-left: 40px;
+}
+.imgimg {
+  display: block;
+  float: left;
+  margin-left: 180px;
+}
+.imgimg:nth-child(1) {
+  margin-left: 0;
+}
+
+/* ここからJSテキスト */
+.box__text__dark__grey {
+  margin-top: 20px;
+}
+.box__fourimg__text:first-child {
+  margin-left: 59px;
+}
+.box__fourimg__text {
+  font-size: 16px;
+  float: left;
+  margin-left: 220px;
+}
+
+/* ここからsns */
+.sns__icons {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.sns-inner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.four__sns {
+  width: 68%;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: #f2f2f2;
+}
+.fab__box {
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 185px;
+  margin: 0 auto;
+  background-color: #f2f2f2;;
+  padding: 30px 0;
+  transition: all .3s;
+}
+.fab__box:hover {
+  background-color: #fff;
+}
+.fa-3x {
+  color: #74cfae;
+}
+
+/* ここからfooter */
+.footer {
+  background-color: #74cfae;
+  width: 100%;
+}
+.footer-inner {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.footer-inner {
+  width: 30%;
+  margin-right: 15px;
+  text-align: center;
+}
