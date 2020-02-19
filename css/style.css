@@ -54,6 +54,7 @@
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
+  font-family: 'Raleway';
 }
 .text__bolt__sub {
   font-size: 30px;
@@ -153,7 +154,9 @@
   vertical-align: top;
 }
 .grey__sub {
-  font-size: 12px;
+  font-size: 16px;
+  color: #4e4e4e;
+  line-height: 18px;
 }
 .button__mail {
   font-size: 12px;
@@ -181,11 +184,12 @@
 }
 .four__img {
   margin-top: 70px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
+  text-align: center;
 }
 .imgimg {
-  display: block;
-  float: left;
+  display: inline-block;
+  /* float: left; */
   margin-left: 180px;
 }
 .imgimg:nth-child(1) {
