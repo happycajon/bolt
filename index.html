@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="This is my portfolio site.">
     <meta name="keyword" content="bolt, bootstrap, portfolio">
-    <meta name="viewport" content="”width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -15,7 +15,7 @@
   </head>
 
   
-  <body>
+  <body class="body">
     <!-- ここからヘッダー -->
     <header class="header">    
       <div class="inner header-inner clearfix">
@@ -34,10 +34,10 @@
       </div>
 
       <!-- ここからiPhone -->
-      <section class="iphone">
+      <section class="iphone font__change">
         <div class="inner green-inner clearfix">
           <div class="box__iphone">
-            <img src="./img/iphone.png">
+            <img src="./img/iphone.png" alt="" class="img__of__iPhone">
           </div>
           <div class=box__text__green>
             <h2 class="text green__theme">WHAT WE CAN DO?</h2>
@@ -47,17 +47,17 @@
       </section>
 
       <!-- ここからロボット -->
-      <article class="siximg">
+      <article class="siximg font__change">
         <div class="inner grey-inner">
           <h3 class="d-text grey__theme">OUR LATEST WORK</h3>
-          <ul class="six__img clearfix">
-            <li class="img robots"><img src="./img/01.jpg"></li>
-            <li class="img robots"><img src="./img/02.jpg"></li>
-            <li class="img robots"><img src="./img/03.jpg"></li>
-            <li class="img robots"><img src="./img/04.jpg"></li>
-            <li class="img robots"><img src="./img/05.jpg"></li>
-            <li class="img robots"><img src="./img/06.jpg"></li>
-          </ul>
+          <div class="six__img clearfix">
+            <a class="img robots"><img src="./img/01.jpg" alt="Six smartphones"></a>
+            <a class="img robots"><img src="./img/02.jpg" alt="Huge robot is standing"></a>
+            <a class="img robots"><img src="./img/03.jpg" alt="Bisexual icon"></a>
+            <a class="img robots"><img src="./img/04.jpg" alt="Nine images"></a>
+            <a class="img robots"><img src="./img/05.jpg" alt="A robot is lifting the earth"></a>
+            <a class="img robots"><img src="./img/06.jpg" alt="Classic robot"></a>
+          </div>
           <div class="box__text__grey clearfix">
             <div class="box__left">
               <p class="d-text grey__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
@@ -74,37 +74,31 @@
         <div class="inner dark__grey-inner">
           <h4  class="text dark__grey__theme">OUR SKILLS</h4>
           <ul class="four__img clearfix">
-            <li class="imgimg circles"><img src="./img/circle_01.png"></li>
-            <li class="imgimg circles"><img src="./img/circle_02.png"></li>
-            <li class="imgimg circles"><img src="./img/circle_03.png"></li>
-            <li class="imgimg circles"><img src="./img/circle_04.png"></li>
+            <li class="imgimg circles"><img src="./img/circle_01.png" alt="Our skill of JavaScript"><p class="text box__fourimg__text js">JavaScript</p></li>
+            <li class="imgimg circles"><img src="./img/circle_02.png" alt="Our skill of Bootstrap"><p class="text box__fourimg__text bs">Bootstrap</p></li>
+            <li class="imgimg circles"><img src="./img/circle_03.png" alt="Our skill of Wordpress"><p class="text box__fourimg__text wp">WordPress</p></li>
+            <li class="imgimg circles"><img src="./img/circle_04.png" alt="Our skill of Photoshop"><p class="text box__fourimg__text ps">Photoshop</p></li>
           </ul>
-          <div class="box__text__dark__grey clearfix">
-            <div class="text box__fourimg__text js"><p>JavaScript</p></div>
-            <div class="text box__fourimg__text bs"><p>Bootstrap</p></div>
-            <div class="text box__fourimg__text wp"><p>WordPress</p></div>
-            <div class="text box__fourimg__text ps"><p>Photoshop</p></div>
-          </div>
         </div>
       </section>
 
       <!-- ここからsns -->
       <nav class="sns__icons">
         <nav class="inner sns-inner">
-          <ul class="four__sns clearfix">
-            <li class="fab__box"><i class="fab fa-facebook-f fa-3x"></i></li>
-            <li class="fab__box"><i class="fas fa-basketball-ball fa-3x"></i></li>
-            <li class="fab__box"><i class="fab fa-twitter fa-3x"></i></li>
-            <li class="fab__box"><i class="fas fa-envelope fa-3x"></i></li>
-          </ul>
+          <div class="four__sns clearfix">
+            <a class="fab__box"><i class="fab fa-facebook-f fa-3x"></i></a>
+            <a class="fab__box"><i class="fab fa-dribbble fa-3x"></i></a>
+            <a class="fab__box"><i class="fab fa-twitter fa-3x"></i></a>
+            <a class="fab__box"><i class="fas fa-envelope fa-3x"></i></a>
+          </div>
         </nav>
       </nav>
     </main>
-    
+
     <!-- ここからfooter -->
     <footer class="footer">
       <div class="inner footer-inner">
-        <p class="text text__footer">Crafted with<i class="fas fa-heart"></i>by BlackTie.co.</p>
+        <p class="text text__footer">Crafted with <i class="fas fa-heart"></i> by BlackTie.co.</p>
       </div>
     </footer>
   </body>

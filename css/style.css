@@ -8,7 +8,12 @@
 .text {
   color:#fff;
 }
-
+.body {
+  font-family: 'Lato','Raleway' sans-serif;
+}
+.font__change {
+  font-family: 'Raleway';
+}
 /* ここからヘッダー */
 .header {
   background-color: #fff;
@@ -16,6 +21,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .header-inner {
   padding: 15px 0;
@@ -26,6 +32,7 @@
   padding:14px 12px;
   float: right;
   transition: all .3s;
+  text-decoration: none;
 }
 .button__contact:hover {
   color: #333;
@@ -69,9 +76,12 @@
   width: 30%;
   margin-left: 100px; 
 }
+.img__of__iPhone {
+  vertical-align: bottom;
+}
 .box__text__green {
   float: left;
-  width: 50%;
+  width: 56%;
   margin-top:20px;
   text-align: center;
 }
@@ -112,7 +122,6 @@
 .robots:hover {
   opacity: 1;
 }
-
 .img:nth-child(3n+1) {
   margin-left: 0;
 }
@@ -130,11 +139,10 @@
 }
 .box__left {
   float: left;
-  width: 50%;
+  width: 44%;
 }
 .box__right {
   float: left;
-  padding:14px 20px;
   margin-left: 90px;
 }
 .grey__sub {
@@ -145,6 +153,7 @@
   background-color: #74cfae;
   padding:14px 20px;
   transition: all .3s;
+  text-decoration: none;
 }
 .button__mail:hover {
   color: #333;
@@ -177,16 +186,11 @@
 }
 
 /* ここからJSテキスト */
-.box__text__dark__grey {
+.box__fourimg__text{
   margin-top: 20px;
-}
-.box__fourimg__text:first-child {
-  margin-left: 59px;
 }
 .box__fourimg__text {
   font-size: 16px;
-  float: left;
-  margin-left: 220px;
 }
 
 /* ここからsns */
@@ -231,7 +235,5 @@
   padding-bottom: 25px;
 }
 .footer-inner {
-  width: 30%;
-  margin-right: 15px;
-  text-align: center;
+  text-align: right;
 }
