@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 /* 共通スタイル */
+a {
+  display: inline-block;
+}
+img {
+  vertical-align: bottom;
+}
+body {
+  font-family: 'Lato';
+}
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -8,17 +17,8 @@
 .text {
   color:#fff;
 }
-body {
-  font-family: 'Lato';
-}
 .font__change {
   font-family: 'Raleway';
-}
-a {
-  display: inline-block;
-}
-img {
-  vertical-align: bottom;
 }
 .snsicon{
   font-size: 48px;
@@ -99,7 +99,7 @@ img {
 .box__text__green {
   float: left;
   width: 56%;
-  padding-top:20px;
+  margin-top:20px;
   text-align: center;
 }
 .green__theme {
@@ -117,11 +117,10 @@ img {
   width: 100%;
 }
 .grey-inner {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px;
   text-align: center;
 }
-.d-text{
+.d-text　{
   color: #333;
   font-size: 24px;;
 }
@@ -141,7 +140,6 @@ img {
 }
 .robots__hover:hover {
   opacity: 1;
-
 }
 .img:nth-child(3n+1) {
   margin-left: 0;
@@ -221,16 +219,15 @@ img {
   width: 100%;
 }
 .sns-inner {
-  padding: 200px 0 200px;
+  padding: 200px 0;
 }
 .four__sns {
+  font-size: 0;
   text-align: center;
   margin: 0 auto;
-  padding: 30px 0;
   background-color: #f2f2f2;
 }
 .fab__box {
-  font-size: 0;
   display: inline-block;
   width: 185px;
   margin: 0 auto;
@@ -248,18 +245,21 @@ img {
   width: 100%;
 }
 .footer-inner {
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-.footer-inner {
+  padding: 20px 0 25px;
   text-align: right;
 }
 
 
 /* レスポンシブ */
 
-/* タブレット以下の幅 */
+/* タブレットの幅 */
+@media screen and (min-width: 768px) and (max-width:1199px) {
+  .button__hamburger {
+    display: none;
+  }
+}
 
+/* タブレット以下の幅 */
 @media screen and (max-width: 1199px) {
   /* 共通スタイル */
   .inner {
@@ -323,10 +323,8 @@ img {
   }
   .imgimg {
     display: block;
-    margin: 0 auto;
-    margin-top: 88px;
+    margin: 88px 0 0;
   }
-
 }
 
 
@@ -354,7 +352,6 @@ img {
     background-color: #ddd;
     text-align: center;
     }
-
   .top {
     top: 10px;
   }
@@ -374,12 +371,11 @@ img {
   }
   
   /* ここからsns */
-.sns-inner {
-  padding: 50px 0;
-}
-.fab__box {
-  display: block;
-  width: 100%;
-}
-
+  .sns-inner {
+    padding: 50px 0;
+  }
+  .fab__box {
+    display: block;
+    width: 100%;
+  }
 }
