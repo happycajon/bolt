@@ -8,12 +8,26 @@
 .text {
   color:#fff;
 }
-.body {
-  font-family: 'Lato','Raleway',sans-serif;
+body {
+  font-family: 'Lato';
 }
 .font__change {
   font-family: 'Raleway';
 }
+a {
+  display: inline-block;
+}
+img {
+  vertical-align: bottom;
+}
+.snsicon{
+  font-size: 48px;
+  padding: 30px 0;
+  text-decoration: none;
+  width: 100%;
+  color: #74cfae;
+}
+
 /* ここからヘッダー */
 .header {
   background-color: #fff;
@@ -54,7 +68,6 @@
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  font-family: 'Raleway';
 }
 .text__bolt__sub {
   font-size: 30px;
@@ -78,7 +91,7 @@
 .box__iphone {
   float: left;
   width: 30%;
-  margin-left: 100px; 
+  padding-left: 100px; 
 }
 .img__of__iPhone {
   vertical-align: bottom;
@@ -86,7 +99,7 @@
 .box__text__green {
   float: left;
   width: 56%;
-  margin-top:20px;
+  padding-top:20px;
   text-align: center;
 }
 .green__theme {
@@ -95,6 +108,7 @@
 .green__sub {
   font-size: 20px;
   margin-top: 35px;
+  line-height: 24px;
 }
 
 /* ここからロボット */
@@ -120,11 +134,14 @@
 }
 .robots {
   margin-left: 100px;
+}
+.robots__hover {
   opacity: 0.7;
   transition: all .3s;
 }
-.robots:hover {
+.robots__hover:hover {
   opacity: 1;
+
 }
 .img:nth-child(3n+1) {
   margin-left: 0;
@@ -139,17 +156,13 @@
 /* ここからロボット下のセクション */
 .box__text__grey {
   margin-top: 90px;
-  /* margin-left: 250px; */
   text-align: center;
 }
 .box__left {
   display: inline-block;
-  /* float: left; */
-  /* width: 44%; */
 }
 .box__right {
   display: inline-block;
-  /* float: left; */
   margin-left: 90px;
   vertical-align: top;
 }
@@ -184,12 +197,10 @@
 }
 .four__img {
   margin-top: 70px;
-  /* margin-left: 40px; */
   text-align: center;
 }
 .imgimg {
   display: inline-block;
-  /* float: left; */
   margin-left: 180px;
 }
 .imgimg:nth-child(1) {
@@ -210,30 +221,26 @@
   width: 100%;
 }
 .sns-inner {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0 200px;
 }
 .four__sns {
-  /* width: 68%; */
   text-align: center;
   margin: 0 auto;
   padding: 30px 0;
   background-color: #f2f2f2;
 }
 .fab__box {
+  font-size: 0;
   display: inline-block;
   width: 185px;
   margin: 0 auto;
   background-color: #f2f2f2;;
-  padding: 30px 0;
   transition: all .3s;
 }
 .fab__box:hover {
   background-color: #fff;
 }
-.fa-3x {
-  color: #74cfae;
-}
+
 
 /* ここからfooter */
 .footer {
@@ -246,4 +253,133 @@
 }
 .footer-inner {
   text-align: right;
+}
+
+
+/* レスポンシブ */
+
+/* タブレット以下の幅 */
+
+@media screen and (max-width: 1199px) {
+  /* 共通スタイル */
+  .inner {
+    width: 97%;
+  }
+
+  /* ここからiPhone */
+  .green-inner {
+    padding: 50px 0 25px;
+  }
+  .box__iphone {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .img__of__iPhone {
+    vertical-align: none;
+  }
+  .box__text__green {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  /* ここからロボット */
+  .img {
+    float: none;
+  }
+  .robots {
+    margin-left: 0;
+  }
+  .img:nth-child(n+4):nth-child(even) {
+    margin-top: 0;
+  }
+  .img:nth-child(n+4):nth-child(odd) {
+    margin-top: 0;
+  }
+  .img:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  .img:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ここからロボット下のセクション */
+  .box__left {
+    display: block;
+  }
+  .box__right {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  /* ここからダークグレー */
+  .imgimg:first-child {
+    margin-top: 0;
+  }
+  .imgimg {
+    display: block;
+    margin: 0 auto;
+    margin-top: 88px;
+  }
+
+}
+
+
+/* スマホ */
+
+@media screen and (max-width: 767px) {
+  /* ここからヘッダー */
+  .button__contact {
+    display: none;
+  }
+  .button__hamburger {
+    position: relative;
+    padding: 10px;
+    width: 20px;
+    height: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float: right;
+  }
+  .lines {
+    position: absolute;
+    left: 10px;
+    height: 2px;
+    width: 20px;
+    background-color: #ddd;
+    text-align: center;
+    }
+
+  .top {
+    top: 10px;
+  }
+  .middle {
+    top: 17px;
+  }
+  .bottom {
+    top: 24px;
+  }
+
+  /* ここからテーマ */
+  .title-inner {
+    padding: 160px 0 130px;
+  }
+  .text__bolt__theme {
+    font-size: 80px;
+  }
+  
+  /* ここからsns */
+.sns-inner {
+  padding: 50px 0;
+}
+.fab__box {
+  display: block;
+  width: 100%;
+}
+
 }
